@@ -21,7 +21,7 @@ ENTITY pll_main IS
 	(
 		areset		: IN STD_LOGIC  := '0';
 		inclk0		: IN STD_LOGIC  := '0';
-		c0		      : OUT STD_LOGIC ;
+		c0		: OUT STD_LOGIC ;
 		locked		: OUT STD_LOGIC );
 END pll_main;
 
@@ -33,7 +33,7 @@ ARCHITECTURE SYN OF pll_main IS
 	SIGNAL sub_wire2	   : STD_LOGIC ;
 	SIGNAL sub_wire3	   : STD_LOGIC ;
 	SIGNAL sub_wire4	   : STD_LOGIC_VECTOR (1 DOWNTO 0);
-	SIGNAL sub_wire5_bv	: BIT_VECTOR       (0 DOWNTO 0);
+	SIGNAL sub_wire5_bv	   : BIT_VECTOR       (0 DOWNTO 0);
 	SIGNAL sub_wire5	   : STD_LOGIC_VECTOR (0 DOWNTO 0);
 
 
@@ -42,25 +42,25 @@ ARCHITECTURE SYN OF pll_main IS
 	GENERIC (
 		bandwidth_type		         : STRING;
 		clk0_divide_by		         : NATURAL;
-		clk0_duty_cycle		      : NATURAL;
-		clk0_multiply_by		      : NATURAL;
-		clk0_phase_shift		      : STRING;
-		compensate_clock		      : STRING;
-		inclk0_input_frequency		: NATURAL;
-		intended_device_family		: STRING;
-		lpm_hint		               : STRING;
-		lpm_type		               : STRING;
+		clk0_duty_cycle		         : NATURAL;
+		clk0_multiply_by		 : NATURAL;
+		clk0_phase_shift		 : STRING;
+		compensate_clock		 : STRING;
+		inclk0_input_frequency		 : NATURAL;
+		intended_device_family		 : STRING;
+		lpm_hint		         : STRING;
+		lpm_type		         : STRING;
 		operation_mode		         : STRING;
-		pll_type		               : STRING;
-		port_activeclock		      : STRING;
-		port_areset		            : STRING;
+		pll_type		         : STRING;
+		port_activeclock		 : STRING;
+		port_areset		         : STRING;
 		port_clkbad0		         : STRING;
 		port_clkbad1		         : STRING;
 		port_clkloss		         : STRING;
 		port_clkswitch		         : STRING;
-		port_configupdate		      : STRING;
-		port_fbin						: STRING;
-		port_inclk0						: STRING;
+		port_configupdate		 : STRING;
+		port_fbin			 : STRING;
+		port_inclk0			 : STRING;
 		port_inclk1						: STRING;
 		port_locked						: STRING;
 		port_pfdena						: STRING;
